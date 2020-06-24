@@ -29,7 +29,7 @@ function activate(context) {
 				vscode.window.showErrorMessage("Invalid URL!");
 				return;
 			}
-			(getRepo)(res);
+			getRepo(res);
 		});
 		vscode.window.showInformationMessage('Hello World!');
 	});
@@ -38,12 +38,9 @@ function activate(context) {
 }
 // satvik1002/portfolio
 function getRepo(res) {
-	console.log(res);
 	res = "https://codeload.github.com/" + res + "/zip/master";
-	console.log(res);
 	(async function () {
-		await download(res, "project", { extract: true });
-		console.log("done");
+		await download(res, "download", { extract: true });
 	})()
 
 

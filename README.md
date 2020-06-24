@@ -1,6 +1,6 @@
 # gitInVscode README
 
-This is the README for your extension "gitInVscode". After writing up a brief description, we recommend including the following sections.
+This is the README for this extension "gitInVscode". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
